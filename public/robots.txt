@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vardhan-mittal.vercel.app/sitemap.xml

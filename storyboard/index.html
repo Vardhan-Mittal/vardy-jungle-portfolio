@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vardy Storyboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #DDEBE2; font-family: Manrope, sans-serif; }
+  .wrap { display: grid; gap: 32px; padding: 32px 16px; max-width: 1600px; margin: 0 auto; }
+  svg { width: 100%; height: auto; display: block; border-radius: 14px; box-shadow: 0 10px 40px rgba(30,43,36,.12); }
+</style>
+</head>
+<body>
+<div class="wrap" id="wrap"></div>
+<script src="./art.js"></script>
+<script>
+  const only = new URLSearchParams(location.search).get('f');
+  document.getElementById('wrap').innerHTML = FRAME_ORDER.filter(k => !only || k === only).map(k => FRAMES[k]()).join('');
+</script>
+</body>
+</html>

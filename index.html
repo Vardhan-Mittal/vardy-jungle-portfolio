@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vardhan Mittal · Creative Designer × Software Engineer</title>
+  <meta name="description" content="The scroll-through story of Vardhan Mittal, creative designer and software engineer, told by Vardy the monkey in a hand-drawn jungle." />
+  <meta name="theme-color" content="#EAF7F0" />
+  <link rel="canonical" href="https://vardhan-mittal.vercel.app/" />
+  <!-- Social preview (LinkedIn, WhatsApp, X, Slack) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vardhan-mittal.vercel.app/" />
+  <meta property="og:title" content="Vardhan Mittal · Creative Designer × Software Engineer" />
+  <meta property="og:description" content="Scroll through my story with Vardy the monkey: projects, research, hackathons and the jungle in between." />
+  <meta property="og:image" content="https://vardhan-mittal.vercel.app/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Vardy the monkey waving from a branch next to the name Vardhan Mittal" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vardhan Mittal · Creative Designer × Software Engineer" />
+  <meta name="twitter:description" content="Scroll through my story with Vardy the monkey: projects, research, hackathons and the jungle in between." />
+  <meta name="twitter:image" content="https://vardhan-mittal.vercel.app/og.png" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%92%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@500;600;700;800&display=swap" /></noscript>
+</head>
+<body>
+  <div id="loader" aria-live="polite">
+    <svg viewBox="0 0 400 520" aria-hidden="true">
+      <path d="M200 470C312 386 312 140 200 50C88 140 88 386 200 470Z" fill="#5BAE6A"/>
+      <path d="M200 470L200 70" stroke="#000" stroke-opacity=".13" stroke-width="7"/>
+      <g class="drop">
+        <clipPath id="dropClip"><path d="M200 160C230 200 242 228 242 250C242 274 223 292 200 292C177 292 158 274 158 250C158 228 170 200 200 160Z"/></clipPath>
+        <path d="M200 160C230 200 242 228 242 250C242 274 223 292 200 292C177 292 158 274 158 250C158 228 170 200 200 160Z" fill="#BDE7EA" stroke="#fff" stroke-width="3"/>
+        <rect class="fill" clip-path="url(#dropClip)" x="150" y="292" width="100" height="140" fill="#7FCAD3"/>
+        <ellipse cx="185" cy="222" rx="7" ry="12" fill="#fff" opacity=".8"/>
+      </g>
+    </svg>
+    <p class="pct"><span>0</span>%</p>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="VM, back to top">VM<span>.</span></a>
+    <nav class="navpill" aria-label="Sections">
+      <span class="marker" aria-hidden="true"></span>
+      <a href="#story" data-go="0">Story</a>
+      <a href="#work" data-go="6">Work</a>
+      <a href="#skills" data-go="9">Skills</a>
+      <a href="#contact" data-go="11">Contact</a>
+    </nav>
+    <div class="actions">
+      <button class="sound" type="button" aria-pressed="true" aria-label="Turn sound off">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h4l5 4V6L8 10z" fill="currentColor"/><path class="wave1" d="M16 9.5a3.5 3.5 0 0 1 0 5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><path class="wave2" d="M18.5 7a7 7 0 0 1 0 10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><path class="mute" d="M16 9l5 6M21 9l-5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <a class="resume" href="/resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </header>
+
+  <div id="veil" aria-hidden="true"><svg viewBox="-22 -40 44 44"><path d="M0 0C14 -9 13 -30 0 -38C-13 -30 -14 -9 0 0Z" fill="#5BAE6A"/><path d="M0 0L0 -33" stroke="#2F7D4F" stroke-width="2"/></svg></div>
+  <main id="stage"></main>
+  <nav id="branch" aria-label="Chapters"></nav>
+  <div class="scroll-cue" aria-hidden="true"><span>scroll to climb</span><i></i></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div id="scroll-space"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

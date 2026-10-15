@@ -1,0 +1,12 @@
+node_modules
+dist
+.vercel
+.claude
+
+# secrets (the example file is safe to share)
+.env*
+!.env.example
+
+# local reference material, not part of the site
+ideas and inspiration/
+Vardhan_Mittal(2).pdf
